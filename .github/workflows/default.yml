@@ -10,9 +10,15 @@ jobs:
         node: ["18", "20", "22"]
     steps:
       - uses: actions/checkout@v4
+      - uses: ruby/setup-setup@v1
+        with:
+          ruby-version: ruby
+          bundler-cache: true
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+      - run: bundle exec rubocop
+      - run: bundle exec ./gentests.rb
       - run: npm ci
       - run: npm run lint
       - run: npm run test

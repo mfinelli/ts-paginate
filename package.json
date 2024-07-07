@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mfinelli/ts-paginate/issues"
   },
-  "homepage": "https://github.com/mfinelli/ts-paginate#readme"
+  "homepage": "https://github.com/mfinelli/ts-paginate#readme",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
 }

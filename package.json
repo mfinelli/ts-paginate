@@ -1,0 +1,22 @@
+{
+  "name": "@mfinelli/paginate",
+  "version": "1.0.0",
+  "description": "calculate pagination for the frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfinelli/ts-paginate.git"
+  },
+  "keywords": [
+    "pagination"
+  ],
+  "author": "Mario Finelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfinelli/ts-paginate/issues"
+  },
+  "homepage": "https://github.com/mfinelli/ts-paginate#readme"
+}

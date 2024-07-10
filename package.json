@@ -1,6 +1,6 @@
 {
   "name": "@mfinelli/paginate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "calculate pagination for the frontend",
   "type": "module",
   "main": "index.js",

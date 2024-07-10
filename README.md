@@ -14,7 +14,7 @@ npm install --save @mfinelli/paginate
 Then you can use it like so to calculate how to display a pagination component:
 
 ```typescript
-import { paginate } from '@mfinelli/paginate';
+import { paginate } from "@mfinelli/paginate";
 
 // example total items and current page:
 const items = 100;

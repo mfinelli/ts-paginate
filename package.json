@@ -4,7 +4,9 @@
   "description": "calculate pagination for the frontend",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
+    "build": "tsc",
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "vitest run --coverage --coverage.exclude=vendor/bundle/**",

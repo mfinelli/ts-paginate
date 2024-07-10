@@ -1,3 +1,7 @@
+*.tgz
+/.bundle
 /coverage
+/index.d.ts
+/index.js
 /node_modules
 /vendor/bundle

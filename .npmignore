@@ -1,0 +1,14 @@
+/.bundle
+/.editorconfig
+/.github
+/.gitignore
+/.prettierignore
+/Gemfile
+/Gemfile.lock
+/coverage
+/gentests.rb
+/index.test.ts
+/node_modules
+/package-lock.json
+/tsconfig.json
+/vendor

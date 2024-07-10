@@ -1,3 +1,9 @@
+/**!
+ * Copyright (c) 2024 Mario Finelli
+ * This file is part of ts-paginate, distributed under the terms of the MIT
+ * License, see the LICENSE file for details.
+ */
+
 export type Gap = "...";
 
 export function paginate(pages: number, current: number): Array<number | Gap> {

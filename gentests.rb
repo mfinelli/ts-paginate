@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+# Copyright (c) 2024 Mario Finelli
+# This file is part of ts-paginate, distributed under the terms of the MIT
+# License, see the LICENSE file for details.
+
 require 'pagy'
 
 puts 'import { expect, test } from "vitest";'

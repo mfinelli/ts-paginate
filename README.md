@@ -25,6 +25,18 @@ const pages = Math.ceil(items / perPage);
 const view = paginate(pages, page);
 ```
 
+## development
+
+This library intends to produce the same output as the `pagy` gem, so the
+test suite is built by passing inputs to pagy and recording the output. You
+can regenerate the test suite like so:
+
+```shell
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec ./gentests.rb > index.test.ts
+```
+
 ## license
 
 ```

@@ -3,10 +3,15 @@
 
 require 'pagy'
 
-(1..10).each do |p|
-  (p..10).each do |c|
+puts 'import { expect, test } from "vitest";'
+puts 'import { paginate } from "./index";'
+puts ''
+puts 'test("pagination", () => {'
+
+(1..12).each do |p|
+  (p..12).each do |c|
     s = Pagy.new(count: c, items: 1, page: p).series
-    puts "expect(paginate(#{c}, #{p})).toStrictEqual(#{s.map do |v|
+    puts "  expect(paginate(#{c}, #{p})).toStrictEqual(#{s.map do |v|
       if v == :gap
         '...'
       else
@@ -17,16 +22,4 @@ require 'pagy'
   end
 end
 
-[[12, 6]].each do |test|
-  c = test.first
-  p = test.last
-  s = Pagy.new(count: c, items: 1, page: p).series
-  puts "expect(paginate(#{c}, #{p})).toStrictEqual(#{s.map do |v|
-    if v == :gap
-      '...'
-    else
-      # to_i because "current" is a string in pagy
-      v.to_i
-    end
-  end});"
-end
+puts '});'

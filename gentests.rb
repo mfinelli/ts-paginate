@@ -14,7 +14,7 @@ puts 'test("pagination", () => {'
 
 (1..12).each do |p|
   (p..12).each do |c|
-    s = Pagy.new(count: c, items: 1, page: p).series
+    s = Pagy.new(count: c, limit: 1, page: p).series
     puts "  expect(paginate(#{c}, #{p})).toStrictEqual(#{s.map do |v|
       if v == :gap
         '...'

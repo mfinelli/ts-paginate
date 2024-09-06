@@ -19,6 +19,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: bundle exec rubocop -f github
       - run: bundle exec ./gentests.rb
+      - run: bundle exec ./gentests.rb | diff index.test.ts -
       - run: npm ci
       - run: npm run lint
       - run: npm run test

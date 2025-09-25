@@ -1,15 +1,23 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: daily
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: daily
   - package-ecosystem: bundler
     directory: /
     schedule:
       interval: daily
+    cooldown:
+      default-days: 3
+      semver-major-days: 10
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 1
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 3
+      semver-major-days: 10
